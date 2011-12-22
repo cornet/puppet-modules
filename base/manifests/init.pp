@@ -5,5 +5,5 @@ class base::install {
 }
 
 class base {
-  include base::install;
+  include base::install
 }
