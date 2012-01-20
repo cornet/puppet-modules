@@ -1,5 +1,11 @@
 require 'puppet-lint'
 
+desc "Init submodules"
+task :init do
+  system "git submodule init"
+  system "git submodule update"
+end
+
 desc "Run lint check on puppet manifests"
 task :lint do
 	linter =  PuppetLint.new
