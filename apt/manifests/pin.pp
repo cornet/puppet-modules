@@ -14,8 +14,7 @@ define apt::pin(
     owner   => root,
     group   => root,
     mode    => '0644',
-    content => "# ${name}\nPackage: ${packages}\n
-    Pin: release a=${name}\nPin-Priority: ${priority}",
+    content => "# ${name}\nPackage: ${packages}\nPin: release a=${name}\nPin-Priority: ${priority}",
   }
 
 }
